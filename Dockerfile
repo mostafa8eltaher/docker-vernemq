@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 ENV VERNEMQ_VERSION 1.2.0
 
-ADD https://bintray.com/artifact/download/erlio/vernemq/deb/jessie/vernemq_$VERNEMQ_VERSION-1_amd64.deb /tmp/vernemq.deb
+ADD bin/vernemq_1.2.0-1c3180b3-1_amd64.deb /tmp/vernemq.deb
 
 RUN dpkg -i /tmp/vernemq.deb
 RUN rm /tmp/vernemq.deb
